@@ -1,0 +1,22 @@
+#Create a variable list
+go_on = "yes"
+expenseCount = 0
+
+#set up while loop
+
+while go_on == "yes":
+    #Ask user for original count
+    acctTotal = float(input('Enter starting amount in account: '))
+    expenses =  float(input('Enter in your expense: '))
+    expenseCount += 1
+    #Ask if they have another expense
+    go_on = input ("Do you have another expense to add? yes/no")
+    #Calculate end total after expenses and variable for expense count
+    endTotal = acctTotal - expenses
+    
+   
+else:
+#Display totals from start to finish
+    print ("Amount originally in account: $",acctTotal)
+    print ("Number of Expenses: ",expenseCount)
+    print ("Amount in account AFTER all expenses: $",endTotal)
